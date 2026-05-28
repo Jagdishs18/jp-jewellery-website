@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shipping & Delivery | JP Jewellery</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Inter', sans-serif; background-color: #FDF8F0; color: #1E1A16; }
+        .navbar { position: fixed; top: 0; width: 100%; background: rgba(253, 248, 240, 0.96); backdrop-filter: blur(12px); padding: 0.8rem 0; z-index: 1000; border-bottom: 1px solid rgba(212, 175, 55, 0.15); }
+        .nav-container { display: flex; justify-content: space-between; align-items: center; max-width: 1400px; margin: 0 auto; padding: 0 40px; }
+        .logo { display: flex; align-items: center; gap: 10px; cursor: pointer; }
+        .logo-img { height: 48px; width: auto; }
+        .logo-text { font-family: 'Cormorant Garamond', serif; font-size: 1.5rem; font-weight: 700; color: #1A1308; }
+        .nav-links { display: flex; gap: 2.8rem; list-style: none; }
+        .nav-link { text-decoration: none; font-size: 0.8rem; letter-spacing: 1.8px; text-transform: uppercase; color: #2C241C; transition: color 0.3s; cursor: pointer; }
+        .nav-link:hover { color: #D4AF37; }
+        .hamburger { display: none; flex-direction: column; cursor: pointer; gap: 5px; }
+        .bar { width: 28px; height: 2px; background: #1A1308; }
+        .container { max-width: 900px; margin: 0 auto; padding: 0 40px; }
+        .page-header { background: linear-gradient(135deg, #1A1308 0%, #2C241C 100%); color: white; padding: 140px 0 60px; text-align: center; }
+        .page-header h1 { font-size: 3rem; font-family: 'Cormorant Garamond', serif; color: white; }
+        .content { padding: 60px 0; }
+        .content h2 { font-size: 1.8rem; margin: 30px 0 15px; color: #1A1308; }
+        .content h3 { font-size: 1.3rem; margin: 20px 0 10px; color: #D4AF37; }
+        .content p { line-height: 1.8; margin-bottom: 15px; color: #4A3B2E; }
+        .content ul { margin: 15px 0 15px 30px; line-height: 1.8; }
+        .content li { margin-bottom: 8px; }
+        .delivery-card { background: #F9F4EA; padding: 30px; margin: 20px 0; border-radius: 12px; border: 1px solid #D4AF37; }
+        .footer { background: #110E0B; color: #C9BCA8; padding: 40px 0; text-align: center; margin-top: 60px; }
+        .btn-back { display: inline-block; padding: 12px 30px; background: #D4AF37; color: #1A1308; text-decoration: none; border-radius: 0; margin-top: 20px; cursor: pointer; }
+        @media (max-width: 768px) {
+            .nav-links { position: fixed; top: 0; right: -100%; height: 100vh; width: 75%; background: rgba(253, 248, 240, 0.98); flex-direction: column; justify-content: center; transition: 0.45s; }
+            .nav-links.active { right: 0; }
+            .hamburger { display: flex; }
+            .page-header h1 { font-size: 2rem; }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo" onclick="location.href='index.html'">
+                <img src="public/images/icon.png" alt="JP Jewellery Logo" class="logo-img" onerror="this.src='https://placehold.co/48x48?text=JP'">
+                <span class="logo-text">JP Jewellery</span>
+            </div>
+            <div class="nav-links" id="navLinks">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="collections.html" class="nav-link">Collections</a>
+                <a href="arrivals.html" class="nav-link">Arrivals</a>
+                <a href="craft.html" class="nav-link">Craft</a>
+                <a href="stories.html" class="nav-link">Stories</a>
+                <a href="visit.html" class="nav-link">Visit Us</a>
+            </div>
+            <div class="hamburger" id="hamburger"><span class="bar"></span><span class="bar"></span><span class="bar"></span></div>
+        </div>
+    </nav>
+
+    <div class="page-header">
+        <h1>Shipping & Delivery Policy</h1>
+        <p style="margin-top: 15px;">Secure & Insured Shipping Across India</p>
+    </div>
+
+    <div class="container content">
+        <div class="delivery-card">
+            <h2>📦 Free Shipping on Orders Above ₹50,000</h2>
+            <p>JP Jewellery offers shipping on every order within India. Your order will be shipped to you with fully secured logistics system. We request the customers to inspect the delivered package for any damage or tamper before receiving or signing the receipt.</p>
+        </div>
+
+        <h2>Shipping Policy</h2>
+        <p>JP Jewellery offers shipping on every order within India. Your order will be shipped to you with fully secured logistics system. We request the customers to inspect the delivered package for any damage or tamper before receiving or signing the receipt.</p>
+
+        <h2>Delivery</h2>
+        <p>Packages will be dispatched within 2 days of payment and are shipped via courier service. The Shipping fees includes handling and packing fees as well as postage costs. The transport fees will vary and it is based on the total weight of the package. We suggest you to club your items in one order. If you place separate orders for a group of items the shipping fees will apply to each of them.</p>
+        <p>Boxes are amply sized and your items are well-protected.</p>
+
+        <h2>Delivery Timeline</h2>
+        <ul>
+            <li><strong>In-Stock Items:</strong> 3-7 business days from dispatch</li>
+            <li><strong>Made-to-Order:</strong> 10-15 business days from dispatch</li>
+            <li><strong>Custom Designs:</strong> 20-25 business days from dispatch</li>
+            <li><strong>Store Pickup:</strong> Ready within 2 hours (Tirupati store)</li>
+        </ul>
+
+        <h2>Shipping Charges</h2>
+        <ul>
+            <li>Orders below ₹50,000: Flat ₹500 shipping fee (includes handling, packing & postage)</li>
+            <li>Orders above ₹50,000: Free shipping</li>
+            <li>International shipping: Available on request (charges vary based on weight and destination)</li>
+        </ul>
+
+        <h2>Secure Packaging</h2>
+        <p>Your jewellery is packaged in tamper-proof, discreet boxes with no external branding. Boxes are amply sized and your items are well-protected with cushioning material to prevent any damage during transit. Each package includes:</p>
+        <ul>
+            <li>Certificate of Authenticity</li>
+            <li>BIS Hallmark details (for gold)</li>
+            <li>Diamond grading certificate (for diamonds above 0.5ct)</li>
+            <li>Care instructions and cleaning cloth</li>
+            <li>Original invoice and warranty card</li>
+        </ul>
+
+        <h2>Order Tracking</h2>
+        <p>Once your order is shipped, you will receive a tracking number via email and SMS. You can track your package through our carrier partner's website. We recommend checking the tracking status regularly for real-time updates on your delivery.</p>
+
+        <h2>Store Pickup (Click & Collect)</h2>
+        <p>Select "Store Pickup" at checkout to collect your order from our Tirupati store. Please bring your order confirmation and a valid ID proof for verification. This option is free of charge and available during store operating hours.</p>
+
+        <h2>Important Notes</h2>
+        <ul>
+            <li>All deliveries require a signature upon receipt - please ensure someone is available to accept the delivery</li>
+            <li>Please inspect the package for any damage or tamper before accepting delivery</li>
+            <li>For any issues or discrepancies, contact us immediately at 092469 99951 within 24 hours of delivery</li>
+            <li>Delivery timelines may vary depending on your location and external factors like weather, strikes, or courier delays</li>
+            <li>JP Jewellery is not responsible for delays caused by incorrect shipping addresses provided by the customer</li>
+            <li>In case of a lost package, we will initiate a full investigation with the courier partner and ensure resolution</li>
+        </ul>
+
+        <h2>International Shipping</h2>
+        <p>For international orders, please contact our customer support team at 092469 99951 or email info@jpjewellery.in. International shipping charges, customs duties, and taxes are borne by the customer. Delivery timelines for international orders typically range from 10-20 business days depending on the destination country.</p>
+
+        <div style="text-align: center; margin-top: 40px;">
+            <button onclick="location.href='index.html'" class="btn-back">← Back to Home</button>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <p>© 2025 JP Jewellery — Trusted Jewellers in Tirupati. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        const hamburger = document.getElementById('hamburger');
+        const navLinks = document.getElementById('navLinks');
+        if(hamburger && navLinks) {
+            hamburger.addEventListener('click', () => {
+                hamburger.classList.toggle('active');
+                navLinks.classList.toggle('active');
+            });
+        }
+    </script>
+</body>
+</html>

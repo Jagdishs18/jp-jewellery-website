@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Disclaimer | JP Jewellery</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Inter', sans-serif; background-color: #FDF8F0; color: #1E1A16; }
+        .navbar { position: fixed; top: 0; width: 100%; background: rgba(253, 248, 240, 0.96); backdrop-filter: blur(12px); padding: 0.8rem 0; z-index: 1000; border-bottom: 1px solid rgba(212, 175, 55, 0.15); }
+        .nav-container { display: flex; justify-content: space-between; align-items: center; max-width: 1400px; margin: 0 auto; padding: 0 40px; }
+        .logo { display: flex; align-items: center; gap: 10px; cursor: pointer; }
+        .logo-img { height: 48px; width: auto; }
+        .logo-text { font-family: 'Cormorant Garamond', serif; font-size: 1.5rem; font-weight: 700; color: #1A1308; }
+        .nav-links { display: flex; gap: 2.8rem; list-style: none; }
+        .nav-link { text-decoration: none; font-size: 0.8rem; letter-spacing: 1.8px; text-transform: uppercase; color: #2C241C; transition: color 0.3s; cursor: pointer; }
+        .nav-link:hover { color: #D4AF37; }
+        .hamburger { display: none; flex-direction: column; cursor: pointer; gap: 5px; }
+        .bar { width: 28px; height: 2px; background: #1A1308; }
+        .container { max-width: 900px; margin: 0 auto; padding: 0 40px; }
+        .page-header { background: linear-gradient(135deg, #1A1308 0%, #2C241C 100%); color: white; padding: 140px 0 60px; text-align: center; }
+        .page-header h1 { font-size: 3rem; font-family: 'Cormorant Garamond', serif; color: white; }
+        .content { padding: 60px 0; }
+        .content h2 { font-size: 1.5rem; margin: 30px 0 15px; color: #1A1308; }
+        .content p { line-height: 1.8; margin-bottom: 15px; color: #4A3B2E; }
+        .disclaimer-box { background: #FFF8F0; border-left: 4px solid #D4AF37; padding: 30px; margin: 30px 0; }
+        .footer { background: #110E0B; color: #C9BCA8; padding: 40px 0; text-align: center; margin-top: 60px; }
+        .btn-back { display: inline-block; padding: 12px 30px; background: #D4AF37; color: #1A1308; text-decoration: none; margin-top: 20px; }
+        @media (max-width: 768px) {
+            .nav-links { position: fixed; top: 0; right: -100%; height: 100vh; width: 75%; background: rgba(253, 248, 240, 0.98); flex-direction: column; justify-content: center; transition: 0.45s; }
+            .nav-links.active { right: 0; }
+            .hamburger { display: flex; }
+            .page-header h1 { font-size: 2rem; }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo" onclick="location.href='index.html'">
+                <img src="public/images/icon.png" alt="JP Jewellery Logo" class="logo-img" onerror="this.src='https://placehold.co/48x48?text=JP'">
+                <span class="logo-text">JP Jewellery</span>
+            </div>
+            <div class="nav-links" id="navLinks">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="collections.html" class="nav-link">Collections</a>
+                <a href="arrivals.html" class="nav-link">Arrivals</a>
+                <a href="craft.html" class="nav-link">Craft</a>
+                <a href="stories.html" class="nav-link">Stories</a>
+                <a href="visit.html" class="nav-link">Visit Us</a>
+            </div>
+            <div class="hamburger" id="hamburger"><span class="bar"></span><span class="bar"></span><span class="bar"></span></div>
+        </div>
+    </nav>
+
+    <div class="page-header">
+        <h1>Disclaimer</h1>
+        <p style="margin-top: 15px;">Important Legal Information</p>
+    </div>
+
+    <div class="container content">
+        <div class="disclaimer-box">
+            <p><strong>Disclaimer of Warranties</strong><br>
+            The information provided on the JP Jewellery website is for general informational purposes only. While we strive to keep information accurate and up-to-date, we make no representations or warranties of any kind, express or implied, about the completeness, accuracy, reliability, suitability, or availability of the information contained on the website.</p>
+        </div>
+
+        <h2>Product Representation</h2>
+        <p>Images of jewellery products displayed on this website are for illustrative purposes. Actual products may vary slightly in appearance due to photography lighting, screen display settings, and natural variations in gemstones and metals. We recommend visiting our physical store to examine products in person before making significant purchases.</p>
+
+        <h2>Gold & Diamond Pricing</h2>
+        <p>Gold and diamond prices fluctuate based on international market rates. Prices shown on this website are indicative and may change without prior notice. The final price at the time of purchase will apply. We encourage customers to check current rates before making a purchase decision.</p>
+
+        <h2>Hallmark & Certification</h2>
+        <p>While JP Jewellery ensures all gold products are BIS hallmarked and diamonds come with appropriate certification, customers are advised to verify hallmark details at the time of purchase. For certified diamonds, the certificate number and grading details are provided with each purchase.</p>
+
+        <h2>External Links</h2>
+        <p>Our website may contain links to external websites. We have no control over the content, nature, or availability of those sites and assume no responsibility for their practices or content.</p>
+
+        <h2>Limitation of Liability</h2>
+        <p>JP Jewellery shall not be liable for any direct, indirect, incidental, consequential, or punitive damages arising from your access to or use of our website or products, to the fullest extent permitted by law.</p>
+
+        <h2>Governing Law</h2>
+        <p>These terms and any disputes arising from them shall be governed by the laws of India and subject to the exclusive jurisdiction of courts in Tirupati, Andhra Pradesh.</p>
+
+        <div style="text-align: center; margin-top: 40px;">
+            <button onclick="location.href='index.html'" class="btn-back">← Back to Home</button>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <p>© 2025 JP Jewellery — Trusted Jewellers in Tirupati. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        const hamburger = document.getElementById('hamburger');
+        const navLinks = document.getElementById('navLinks');
+        if(hamburger && navLinks) {
+            hamburger.addEventListener('click', () => {
+                hamburger.classList.toggle('active');
+                navLinks.classList.toggle('active');
+            });
+        }
+    </script>
+</body>
+</html>
